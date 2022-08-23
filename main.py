@@ -3,9 +3,9 @@ from tkinter import ttk
 from PIL import Image, ImageTk
 import ttkbootstrap as strap
 
-
 class main(tk.Tk):
 
+    #constructor
     def __init__(self):
         super(main, self).__init__()
 
@@ -32,7 +32,7 @@ class main(tk.Tk):
             self.register_frame.grid_forget()
             self.login_frame.grid(row=0, column=0, sticky="ewns")
 
-
+#login gui
 class Login(ttk.Frame):
     def __init__(self, master):
         super().__init__(master)
@@ -63,7 +63,7 @@ class Login(ttk.Frame):
         login_button.grid(row=3, column=1, pady=20, padx=20, sticky="e")
         register_button.grid(row=3, column=0, pady=20, padx=20)
 
-
+#register GUI
 class Register(ttk.Frame):
     def __init__(self, master):
         super().__init__(master)
